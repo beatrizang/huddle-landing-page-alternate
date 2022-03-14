@@ -1,0 +1,42 @@
+header{
+    @include display-column;
+    background-color: $very-pale-cyan;
+    padding-top: 2em;
+    justify-content: center;
+    align-items: center;
+    nav{
+        @include display-row;
+        justify-content: space-around;
+        img {
+            margin-right: 50em;
+        }
+    }
+}
+
+.header-content {
+    @include display-row;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0;
+    width: 90%;
+}
+
+.header-text {
+    font-family: $font-headings;
+    margin-right: 2em;
+    h1 {
+        padding-bottom: 0.8em;
+    }
+
+    p {
+        padding-bottom: 1.5em;
+    }
+
+}
+
+.header-img {
+    img {
+        width: 40em;
+        height: 30em;
+    }
+}

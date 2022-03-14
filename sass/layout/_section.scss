@@ -1,0 +1,47 @@
+.sections {
+    @include display-column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    @include section;
+}
+
+.text-section {
+    width: 30em;
+
+}
+
+.grow-together {
+    .text-section {
+        margin-right: 10em;
+    }
+}
+
+.flow-conversations {
+    .text-section {
+        margin-left: 10em;
+    }
+}
+
+.users {
+    .text-section {
+        margin-right: 10em;
+    }
+}
+
+.get-start {
+    @include shadow-section;
+    padding: 2em 4em;
+    border-radius: 0.5em;
+    background-color: white;
+    text-align: center;
+    transform: translate(0, 50%);
+    
+    h2 {
+        font-family: $font-headings;
+        color: $very-dark-cyan;
+        padding-bottom: 1em;
+    }
+}

@@ -3,16 +3,19 @@
   <head>
     <title>Huddle Landing Page with Alternative Feature Blocks | Frontend Mentor</title>
     <link rel="icon" href="images/favicon-32x32.png">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/main.css">
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/4cd467655d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:ital,wght@0,600;1,500&family=Big+Shoulders+Display:wght@700&family=Dancing+Script&family=Didact+Gothic&family=Dongle:wght@300;400&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Merriweather:wght@300&family=Open+Sans:wght@400;700&family=Outfit:wght@300;400;600&family=Parisienne&family=Poppins:wght@600&family=Quicksand:wght@300;400&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:ital@1&family=Spartan:wght@400;500;700&family=Tangerine:wght@700&family=Yellowtail&display=swap" rel="stylesheet">
   </head>
   <body>
     <main class="container">
       <header>
         <nav>
-          <img src="images/logo.svg" alt="Logo Companie">
-          <button type="button">Try It Free</button>
+            <img src="images/logo.svg" alt="Logo Companie">
+            <button class="btn-try" type="button">Try It Free</button>
         </nav>
         <div class="header-content">
           <div class="header-text">
@@ -23,76 +26,92 @@
               connections with your users as you engage in genuine
               discussion.
             </p>
-            <button type="button">Get Started For Free</button>
+            <button class="btn-get" type="button">Get Started For Free</button>
           </div>
           <div class="header-img">
             <img src="images/illustration-mockups.svg" alt="" aria-hidden="true">
           </div>
         </div>
       </header>
-      <section class="grow-together">
-        <div class="text-grow">
-          <h2>Grow Together</h2>
-          <p>
-            Generate meaningful discussions with your audience and
-            build a strong loyal community. Think of the insightful
-            conversations you miss out on with a feedback form.
-          </p>
-        </div>
-        <div class="img-grow">
-          <img src="images/illustration-grow-together.svg" 
-          alt="Image of people growing together">
-        </div>
-      </section>
-      <section class="flow-conversations">
-        <div class="flow-img">
-          <img src="images/illustration-flowing-conversation.svg"
-          alt="Illustration of flowing conversations">
-        </div>
-        <div class="flow-text">
-          <h2>Flowing Conversations</h2>
-          <p>
-            You wouldn't paginate a conversation in real time, so why
-            go it online? Our threads have just-in-time loading for a
-            more natural flow.
-          </p>
-        </div>
-      </section>
-      <section class="users">
-        <div class="users-text">
-          <h2>Your Users</h2>
-          <p>
-            It takes no time at all to integrate Huddle with your app's
-            authentication solution. This means, once signed in to your
-            app, your users can start chatting immediately.
-          </p>
-        </div>
-        <div class="users-img">
-          <img src="images/illustration-your-users.svg"
-          alt="Images of users">
-        </div>
-      </section>
-      <section class="get-start">
-        <h2>Ready To Build Your Community?</h2>
-        <button type="button">Get Started For Free</button>
-      </section>
+      <div class="sections">
+        <section class="section grow-together">
+          <div class="text-section">
+            <h2>Grow Together</h2>
+            <p>
+              Generate meaningful discussions with your audience and
+              build a strong loyal community. Think of the insightful
+              conversations you miss out on with a feedback form.
+            </p>
+          </div>
+          <div class="img-grow">
+            <img src="images/illustration-grow-together.svg" 
+            alt="Image of people growing together">
+          </div>
+        </section>
+        <section class="section flow-conversations">
+          <div class="flow-img">
+            <img src="images/illustration-flowing-conversation.svg"
+            alt="Illustration of flowing conversations">
+          </div>
+          <div class="text-section">
+            <h2>Flowing Conversations</h2>
+            <p>
+              You wouldn't paginate a conversation in real time, so why
+              go it online? Our threads have just-in-time loading for a
+              more natural flow.
+            </p>
+          </div>
+        </section>
+        <section class="section users">
+          <div class="text-section">
+            <h2>Your Users</h2>
+            <p>
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your
+              app, your users can start chatting immediately.
+            </p>
+          </div>
+          <div class="users-img">
+            <img src="images/illustration-your-users.svg"
+            alt="Images of users">
+          </div>
+        </section>
+        <section class="get-start">
+          <h2>Ready To Build Your Community?</h2>
+          <button class="btn-get" type="button">Get Started For Free</button>
+        </section>
+
+      </div>
+
       <footer>
-        <img src="images/logo.svg" alt="" aria-hidden="true">
+        <img class="footer-logo" src="images/footer-logo.svg" alt="" aria-hidden="true">
         <div class="column">
           <div class="contacts">
             <div class="contact">
-              <img src="images/icon-location.svg" alt="" aria-hidden="true">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ea architecto repellat est autem quibusdam iure minus neque
-              </p>
+              <div>
+                <img src="images/icon-location.svg" alt="" aria-hidden="true">
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ea architecto repellat est autem quibusdam iure minus neque
+                </p>
+              </div>
             </div>
             <div class="contact">
-              <img src="images/icon-phone.svg" alt="" aria-hidden="true">
-              <p>+1-543-123-4567</p>
+              <div>
+                <img src="images/icon-phone.svg" alt="" aria-hidden="true">
+              </div>
+              <div>
+                <p>+1-543-123-4567</p>
+              </div>
             </div>
             <div class="contact">
-              <img src="images/icon-email.svg" alt="" aria-hidden="true">
-              <p>example@huddle.com</p>
+              <div>
+                <img src="images/icon-email.svg" alt="" aria-hidden="true">
+              </div>
+              <div>
+                <p>example@huddle.com</p>
+              </div>
             </div>
           </div>
           <div class="about">
@@ -110,17 +129,18 @@
             </ul>
           </div>
           <div class="social-media">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
+            <i class="icon facebook fab fa-facebook-f"></i>
+            <i class="icon twitter fab fa-twitter"></i>
+            <i class="icon instagram fab fa-instagram"></i>
           </div>
         </div>
         <div class="copy">
           <p>© Copyright 2018 Huddle. All rights reserved.</p>
         </div>
-
-
-
+        <div class="author">
+          <p>Challenge by <span><a target="_blank" rel="noopener noreferrer" href="https://www.frontendmentor.io/">Frontend Mentor</a></span>.
+            Coded by <span><a target="_blank" rel="noopener noreferrer" href="https://github.com/beatrizang">Beatriz</a></span>.</p>
+        </div>
       </footer>
     </main>
 

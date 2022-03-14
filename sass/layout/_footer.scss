@@ -1,0 +1,91 @@
+footer {
+    background-color: $very-dark-cyan;
+    padding-top: 10em;
+    padding-bottom: 5em;
+
+    p {
+        color: white;
+    }
+    
+    ul {
+        margin: 5em;
+    }
+    
+    li {
+        list-style: none;
+        padding: 10px 0;
+    }
+
+    a {
+        font-family: $font-body-call;
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer-logo {
+    margin-left: 5em
+}
+
+.column {
+    @include display-row;
+    align-items:baseline;
+    margin: 0.5em 5em;
+}
+
+.contacts {
+    padding: 0.2em 0;
+    width: 25em;
+    margin-right: 2em;
+}
+
+.contact {
+    @include display-row;
+    padding: 10px 0;
+    img {
+        margin-right: 1em;
+    }
+}
+
+.icon {
+    color: white;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.icon:hover {
+    cursor: pointer;
+    color: $pink;
+    border: 1px solid $pink;
+}
+
+.facebook {
+    padding: 8px 11px;
+}
+
+.twitter {
+    padding: 8px;
+}
+
+.instagram {
+    padding: 8px 9px;
+}
+
+.copy {
+    text-align: right;
+    margin-right: 50px;
+}
+
+.author {
+    text-align: center;
+    padding-top: 2em;
+
+    a:hover {
+        color: $pink;
+    }
+}

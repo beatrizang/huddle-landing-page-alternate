@@ -1,0 +1,24 @@
+.btn-try{
+    @include button (white,$very-dark-cyan);
+    @include shadow-btn (black);
+    padding: 0 3em;
+    margin-right: 3em;
+    
+}
+
+.btn-try:hover {
+    cursor: pointer;
+    color: $grayish-blue;
+}
+
+.btn-get {
+    @include button ($pink,white);
+    @include shadow-btn ($pink);
+    padding: 1em 4em;
+}
+
+.btn-get:hover {
+    cursor: pointer;
+    background-color: $pink-light;
+
+}
