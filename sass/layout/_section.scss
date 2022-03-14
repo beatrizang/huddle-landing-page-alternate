@@ -10,7 +10,6 @@
 
 .text-section {
     width: 30em;
-
 }
 
 .grow-together {
@@ -43,5 +42,55 @@
         font-family: $font-headings;
         color: $very-dark-cyan;
         padding-bottom: 1em;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .section {
+        @include display-column;
+        text-align: center;
+        height: auto;
+        padding: 1em;
+
+        img {
+            width: 70%;
+            height: auto;
+        }
+    }
+
+    .text-section {
+        width: auto;
+        padding: 2em 0;
+    }
+
+    .grow-together {
+        img {
+            padding-bottom: 2em;
+        }
+        .text-section {
+            margin-right: 0;
+        }
+    }
+    
+    .flow-conversations {
+        img {
+            padding-top: 2em;
+        }
+        .text-section {
+            margin-left: 0;
+        }
+    }
+    
+    .users {
+        img {
+            padding-bottom: 2em;
+        }
+        .text-section {
+            margin-right: 0;
+        }
+    }
+
+    .get-start {
+        width: 90%;
     }
 }

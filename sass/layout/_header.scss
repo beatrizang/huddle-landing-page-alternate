@@ -1,6 +1,8 @@
 header{
     @include display-column;
     background-color: $very-pale-cyan;
+    background-image: url("../../images/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
     padding-top: 2em;
     justify-content: center;
     align-items: center;
@@ -38,5 +40,31 @@ header{
     img {
         width: 40em;
         height: 30em;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    header {
+        background-image: url("../../images/bg-hero-mobile.svg");
+        nav {
+            width: 100%;
+            justify-content: space-around;
+            img {
+                margin-right: 2em;
+            }
+        }
+    }
+
+    .header-content {
+        @include display-column;
+        text-align: center;
+    }
+
+    .header-img {
+        img {
+            padding-top: 2em;
+            width: 90%;
+            height:auto;
+        }
     }
 }

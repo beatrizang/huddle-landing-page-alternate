@@ -89,3 +89,34 @@ footer {
         color: $pink;
     }
 }
+
+
+@media only screen and (max-width: 1260px) {
+    footer {
+        ul {
+            margin: 1em 0 0 0;
+        }
+    }
+
+    .column {
+        @include display-column;
+    }
+
+    .contacts {
+        padding:0;
+        width: 90%;
+        margin-right: 0;
+    }
+
+    .social-media {
+        @include display-row;
+        margin: 1em auto;
+
+    }
+
+    .copy {
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+}
