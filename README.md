@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/huddle-landing-page-html-css-qK2hAA264
 - Live Site URL: https://beatrizang.github.io/huddle-landing-page-alternate/
 
 ## My process
